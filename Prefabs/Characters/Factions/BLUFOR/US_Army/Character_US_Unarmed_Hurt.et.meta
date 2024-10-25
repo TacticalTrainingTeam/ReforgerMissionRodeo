@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{4A54ED5987EC5AF7}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Unarmed_Hurt.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

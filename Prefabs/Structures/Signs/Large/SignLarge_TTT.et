@@ -1,0 +1,17 @@
+GenericEntity : "{7FC0782750D4F881}Prefabs/Structures/Signs/SignsLarge_Base.et" {
+ ID "50D67C36F4200F97"
+ components {
+  MeshObject "{54969A6AAAADA251}" {
+   Object "{C1749998293A79FD}Assets/Structures/Signs/Large/SignLarge_01_poles.xob"
+   Materials {
+    MaterialAssignClass "{627CF3E4FEDA3F90}" {
+     SourceMaterial "SignLarge_01"
+     AssignedMaterial "{834959B56546E44F}Assets/Structures/Signs/Large/Data/SignLarge_TTT.emat"
+    }
+   }
+  }
+  RigidBody "{54969A6AA8773997}" {
+   ResponseIndex "LargeDestructible"
+  }
+ }
+}

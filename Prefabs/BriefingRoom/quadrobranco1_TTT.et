@@ -1,0 +1,94 @@
+GenericEntity : "{DED4DB7D08E6E0BE}Prefabs/Structures/Military/Radar/ApproachRadar_RPL5_01/ApproachRadar_RPL5_01.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SignalsManagerComponent "{62891CD23DDCCC17}" {
+   Enabled 0
+  }
+  SoundComponent "{62891CD23DDCCC6A}" {
+   Enabled 0
+   Filenames {
+    "{64F8970E7653FABF}Sounds/Structures/Military/Radar/Structures_ApproachRadar.acp"
+   }
+   IncludeInactive 1
+  }
+  InventoryItemComponent "{62891CD23DDCCC63}" {
+   Enabled 0
+   Attributes SCR_ItemAttributeCollection "{62891CD23DDCCC79}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{62891CD23DDCCC7B}" {
+     Name "HardCase"
+     Icon "{04C15DD1ADC49576}ArtPrefabs/20240503101803_1.edds"
+     m_bShowIconInInventory 1
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{62891CD23DDCCC73}" {
+     Weight 3
+     SizeSetupStrategy Manual
+    }
+    m_Size SLOT_1x1
+    m_SlotType SLOT_LOOT_STORAGE
+   }
+  }
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{94F7CE276B05E84B}Assets/Props/Fabric/Flags/Flag_1_2.xob"
+   Materials {
+    MaterialAssignClass "{62891CD5F55D29EB}" {
+     SourceMaterial "Flag_1_2"
+     AssignedMaterial "{2DE462A7D6AF1B11}Assets/Props/Fabric/Flags/Data/Flag_1_2_TTT.emat"
+    }
+   }
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   Kinematic 1
+  }
+  ProcAnimComponent "{5A4ED832D66CA486}" {
+   Enabled 0
+   Parameters {
+    ProcAnimParams "{5A4ED832D0272DD6}" {
+     SimulationDistance 2000
+    }
+   }
+  }
+  SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+   Enabled 0
+   m_aDamagePhases {
+    SCR_DamagePhaseData "{5A50E304ED73C0AE}" {
+     m_PhaseModel "{92FCA00964390EA0}Assets/Decals/Concrete/Damage/Runway_Cracks_01.xob"
+    }
+   }
+  }
+  SCR_EditableEntityComponent "{62891CD23DDCCC5E}" {
+   Enabled 1
+   m_UIInfo SCR_EditableEntityUIInfo "{62891CD23DDCCC58}" {
+    Name "White Board"
+    Icon "{D3C22CCE98F12A01}ArtPrefabs/whiteboard1.edds"
+    m_Image "{D3C22CCE98F12A01}ArtPrefabs/whiteboard1.edds"
+    m_aAuthoredLabels {
+     1 13 1001
+    }
+   }
+  }
+  ActionsManagerComponent "{62891CD23DDCCC56}" {
+   Enabled 0
+   ActionContexts {
+    UserActionContext "{62891CD23DDCCC51}" {
+     ContextName "default"
+     Position PointInfo "{62891CD23DDCCC53}" {
+      Offset 0 0.025 0
+     }
+     Height 0
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{62891CD23DDCCCA9}" {
+     ParentContextList {
+      "default"
+     }
+    }
+   }
+  }
+  Hierarchy "{62891CD23DDCCCA5}" {
+  }
+ }
+ coords 1352.969 40.495 2134.127
+ angleY -40.578
+ scale 1.1
+}
